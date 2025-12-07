@@ -1,6 +1,5 @@
 package com.ridehailing.common.security;
 
-import com.ridehailing.auth.domain.User;
 import com.ridehailing.common.exception.UnauthorizedException;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;

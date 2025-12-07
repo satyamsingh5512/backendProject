@@ -72,6 +72,9 @@ app:
     matching:
       search-radius-km: 5.0
       max-drivers-to-check: 10
+  
+  payment:
+    commission-rate: 20.0
 
 logging:
   level:
@@ -80,3 +83,4 @@ logging:
     org.hibernate.SQL: DEBUG
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+
