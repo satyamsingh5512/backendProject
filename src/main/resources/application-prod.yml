@@ -1,0 +1,12 @@
+spring:
+  jpa:
+    show-sql: false
+  
+  datasource:
+    hikari:
+      maximum-pool-size: 20
+
+logging:
+  level:
+    com.ridehailing: INFO
+    org.springframework: WARN
