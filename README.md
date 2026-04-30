@@ -44,6 +44,14 @@ flowchart TD
 
 A production-style backend for a ride-hailing platform (Uber/Lyft-like), built with Spring Boot as a modular monolith.
 
+
+- Designed a microservice-ready, event-driven backend architecture for async trip lifecycle communication using Kafka.
+- Configured Kafka topics with partitioning (`3` partitions per trip lifecycle topic) to support parallel event consumption.
+- Built low-latency driver discovery flow using Redis-backed location cache with radius-based matching logic.
+- Tuned database connectivity with HikariCP pooling (configured in `application.yml`) for stable throughput.
+
+Note: The current repository runs as a modular monolith. GeoHash-based indexing and optimistic locking are documented as next-step scalability enhancements.
+
 ## What It Does
 - Handles signup/login with JWT authentication and role-based access (`RIDER`, `DRIVER`, `ADMIN`).
 - Manages full trip lifecycle: request, match, accept, start, complete, cancel.
