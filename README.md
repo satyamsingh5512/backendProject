@@ -3,7 +3,7 @@
 ## System Design
 ```mermaid
 flowchart TD
-    C[Client Apps\nRider | Driver | Admin]
+    C[Client Apps<br/>Rider, Driver, Admin]
     G[API Gateway Layer\nSpring Boot REST Controllers]
     S[Security Layer\nJWT Auth + RBAC]
 
